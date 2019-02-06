@@ -1,0 +1,92 @@
+body{
+
+font-family: sans-serif;
+margin: 0;
+ 
+
+}
+
+/* }
+p{
+
+    text-align: center;
+
+}
+
+
+  div p{
+    border: 1px solid black;
+    height: 300px;
+    margin: 5%;
+    width: 90;
+ color: blue;
+ 
+}
+
+.banner{
+
+    background-image: url(http://adxti.com.br/wp-content/uploads/2015/04/BANNER-SITE-TECNOLOGIA.png);
+    background-position: center;
+    bac
+    
+    kground-size: cover;
+    width: 100vw;
+    height: 30vw;
+} */
+
+
+.opa{
+
+  
+   display: grid;
+   grid-template-rows: repeat(4, auto);
+   grid-template-columns: repeat(4, 25vw);
+    grid-template-areas: 
+    " header header header header"
+    " main main . sidebar"
+    "main main . ."
+    "footer footer footer footer";
+}
+
+
+header{
+    grid-area: header;
+    background-color:pink;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+header nav a {
+    text-decoration: none;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    }
+
+header h3{
+
+
+    }
+
+header nav{
+        display: flex  ;
+        justify-content: space-around;
+        width: 30%;
+    }
+
+main{
+    grid-area: main;
+    background-color: red;
+}
+
+.sidebar{
+    background-color: yellow;
+    grid-area: sidebar;
+
+}
+
+footer{
+    background-color: black;
+    grid-area: footer;
+}
+
